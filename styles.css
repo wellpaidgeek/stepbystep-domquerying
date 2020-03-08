@@ -1,0 +1,147 @@
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol, ul {
+	list-style: none;
+}
+blockquote, q {
+	quotes: none;
+}
+blockquote:before, blockquote:after,
+q:before, q:after {
+	content: '';
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+body {
+  margin: 20px auto;
+  width: 90%;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+h1 {
+  margin: 24px 0;
+  font-size: 24px;
+}
+
+p {
+  margin: 16px 0;
+}
+
+.warning {
+  background-color: #951515;
+  color: white;
+  text-align: center;
+  font-weight: bold;
+  padding: 12px;
+}
+
+textarea {
+  resize: none;
+  width: 100%;
+  box-sizing: border-box;
+  height: 150px;
+}
+
+.controls {
+  margin-top: 24px;
+}
+
+#send {
+  margin-right: 24px;
+}
+
+.button {
+  min-width: 60px;
+  border: 1px solid black;
+  font-size: 16px;
+  padding: 8px;
+  cursor: pointer;
+}
+
+.button-primary {
+  background-color: rgb(12, 12, 255);
+  color: white;
+}
+
+.button-warning {
+  background-color: #951515;
+  color: white;
+}
+
+.hidden {
+  display: none;
+}
+
+ul {
+  list-style-type: disc;
+  margin: 16px;
+}
+
+.results {
+  display: flex;
+  justify-content: space-between;
+  margin: 24px 0;
+  flex-wrap: wrap;
+  display: none;
+}
+
+.results > div {
+  min-width: 48%;
+  max-width: 48%;
+  box-sizing: border-box;
+  padding: 16px;
+  border: 1px solid black;
+  border-radius: 4px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 16px;
+}
+
+.results > div h3 {
+  font-weight: bold;
+}
+
+.results > div > div {
+  font-size: 32px;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.results > div.incorrect {
+  background-color: rgba(218, 12, 12, 0.43);
+}
+
+.results > div.correct {
+  background-color: rgba(32, 134, 26, 0.28);
+}

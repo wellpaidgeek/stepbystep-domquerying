@@ -1,0 +1,65 @@
+<!doctype html>
+<html>
+  <head>
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <h1>Querying the DOM</h1>
+    <p>In this section of the course you will be learning how to query the DOM.</p>
+    <p class="warning">There is a form below!</p>
+    <p class="hidden">There is a form below!</p>
+    <ul class="primary">
+      <li>Type in the text area</li>
+      <li>Click send to send</li>
+      <li>Clear to clear the text area</li>
+    </ul>
+    <ul class="secondary">
+      <li>This</li>
+      <li>Is</li>
+      <li>Another</li>
+      <li>List</li>
+    </ul>        
+    <div class="form">
+      <textarea id="free-text" disabled>I has some text</textarea>
+      <div class="controls">
+        <input class="button button-primary" type="button" value="Send" id="send" />
+        <input type="button" class="button button-warning" value="Cancel" id="cancel" />
+      </div>
+    </div>        
+  </body>
+  <div class="results">
+
+    <div id="numOfWarning" class="incorrect">
+      <h3>numOfWarning: Number of elements with the class 'warning'</h3>
+      <div>0</div>
+    </div>
+
+    <div id="numOfP" class="incorrect">
+        <h3>numOfP: Number of paragraph elements</h3>
+        <div>0</div>
+    </div>
+
+    <div id="text" class="incorrect">
+        <h3>text: Text in the textrea</h3>
+        <div>?</div>
+    </div>
+
+    <div id="numInPrimary" class="incorrect">
+        <h3>numInPrimary: Number of lis in ul with class of 'primary'</h3>
+        <div>0</div>
+    </div>
+
+    <div id="textInSecondary" class="incorrect">
+        <h3>textInSecondary: Text context of second li within ul with class of 'secondary'</h3>
+        <div>?</div>
+    </div>
+
+    <div id="textInButton" class="incorrect">
+        <h3>textInButton: value (attribute) of all inputs on page with class 'button' concatenated with a space between each</h3>
+        <div>?</div>
+    </div>
+
+  </div>
+  <script type="text/javascript" src="solution.js"></script>
+  <script type="text/javascript" src="app.js"></script>
+</html>
